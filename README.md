@@ -1,2 +1,2 @@
 # Siemens Homepage Clone
-Built a responsive Siemens homepage clone using HTML5 and CSS3, implementing semantic markup, Flexbox layouts, responsive design principles, accessibility enhancements, and modern UI styling.
+A responsive frontend clone of the Siemens homepage built using HTML and CSS. This project focuses on recreating a complex corporate landing page layout with clean structure, responsiveness, and UI accuracy.
