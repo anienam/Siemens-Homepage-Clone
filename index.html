@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Siemens Clone</title>
+    <meta name="description" content="Siemens: A leading technology company focused on industry, infrastructure, mobility, and healthcare. Discover our digital solutions and innovations." />
+    <meta property="og:title" content="Siemens - Technology for Industry" />
+    <meta property="og:description" content="Discover Siemens innovations in industry, infrastructure, mobility, and healthcare." />
+    <meta property="og:image" content="images/Siemens.webp" />
+    <title>Siemens - Technology for Industry</title>
 
     <link rel="stylesheet" href="styles.css" />
 
@@ -18,7 +22,7 @@
   <body>
     <!-- Navigation bar -->
     <header>
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Primary navigation">
         <ul>
           <li><a href="#">Siemens Xcelerator Marketplace</a></li>
           <li><a href="#">Jobs & Careers</a></li>
@@ -31,7 +35,7 @@
     <!-- Main section -->
     <main>
       <section class="homepage">
-        <!-- hompage part one -->
+        <!-- Homepage part one -->
         <div class="flex-home">
           <div><h1>SIEMENS</h1></div>
           <div class="home-container">
@@ -43,7 +47,9 @@
                 role="search"
                 aria-label="Site search"
               >
+                <label for="search-input" class="sr-only">Search</label>
                 <input
+                  id="search-input"
                   name="search"
                   class="search-input"
                   type="search"
@@ -51,56 +57,56 @@
                   aria-label="Search query"
                 />
                 <button class="search-btn" type="submit" aria-label="Search">
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </button>
               </form>
             </div>
-            <div>
-              <a href=""><i class="fa-solid fa-globe"></i> Global</a>
-              <a href=""><i class="fa-solid fa-envelope"></i></a>
-              <a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            <div class="header-actions">
+              <a href="#" aria-label="Change language or region"><i class="fa-solid fa-globe" aria-hidden="true"></i> Global</a>
+              <a href="#" aria-label="Newsletter signup"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Login"><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
 
-        <!-- hmepage part two -->
-        <div class="products">
+        <!-- Homepage part two -->
+        <nav class="products" aria-label="Main content navigation">
           <a href="#">Products & Services</a>
           <a href="#">Industries</a>
           <a href="#">Company</a>
-        </div>
+        </nav>
 
-        <!-- homepage part three -->
+        <!-- Homepage part three -->
         <div class="huge">
-          <h1>
+          <h2>
             Join us on a time travel with the <br />
             Digital Twin!
-          </h1>
+          </h2>
           <p>
             Simulation is nothing new, but recently many new capabilities have
             emerged. Join us as we <br />
             learn from the past and look into the future.
           </p>
-          <div class="button touch">
+          <div class="button">
             <a href="#">Learn more</a>
           </div>
         </div>
       </section>
 
-      <!-- press section -->
-      <section class="press">
-        <div press-div>
-          <img src="images/Press.webp" alt="Press Release" />
-        </div>
+      <!-- Press section -->
+      <section class="press" aria-label="Latest press release">
+        <figure class="press-figure">
+          <img src="images/Press.webp" alt="Siemens Q3 FY2025 results announcement" loading="lazy" />
+        </figure>
         <div class="press-flex">
-          <div class="press-body">
+          <article class="press-body">
             <h2>Third Quarter Results FY 2025</h2>
             <p>
               We released our third quarter results for fiscal year 2025 on
               August 7, 2025. The Press Conference Call (08:00 a.m. CEST) and
               the Analyst Call (09:30 a.m. CEST) were broadcast live.
             </p>
-          </div>
+          </article>
           <div class="button">
             <a href="#">Learn more</a>
           </div>
@@ -108,14 +114,14 @@
       </section>
 
       <!-- News section -->
-      <section class="news">
+      <section class="news" aria-label="News and stories">
         <h2>News &amp; Stories</h2>
         <div class="news-container">
-          <!-- first flexbox -->
-          <div class="news-flex">
-            <div class="news-img">
-              <img src="images/hype.webp" alt="Hype or Hope?" />
-            </div>
+          <!-- First article -->
+          <article class="news-flex">
+            <figure class="news-img">
+              <img src="images/hype.webp" alt="Quantum computer visualization" loading="lazy" />
+            </figure>
             <div class="news-body">
               <h3>Quantum technology: Between hype and hope</h3>
               <p>
@@ -124,16 +130,16 @@
                 must still be overcome.
               </p>
             </div>
-            <div class="news-icon">
+            <div class="news-icon" aria-hidden="true">
               <span><i class="fa-solid fa-arrow-right fa-2xl"></i></span>
             </div>
-          </div>
+          </article>
 
-          <!-- second flexbox -->
-          <div class="news-flex">
-            <div class="news-img">
-              <img src="images/clean.webp" alt="Clean water" />
-            </div>
+          <!-- Second article -->
+          <article class="news-flex">
+            <figure class="news-img">
+              <img src="images/clean.webp" alt="Clean water technology system" loading="lazy" />
+            </figure>
             <div class="news-body">
               <h3>Clean water, anytime and anywhere</h3>
               <p>
@@ -141,16 +147,16 @@
                 automate the entire drinking water journey from source to mouth.
               </p>
             </div>
-            <div class="news-icon">
+            <div class="news-icon" aria-hidden="true">
               <span><i class="fa-solid fa-arrow-right fa-2xl"></i></span>
             </div>
-          </div>
+          </article>
 
-          <!-- third flexbox -->
-          <div class="news-flex">
-            <div class="news-img">
-              <img src="images/3D.webp" alt="3D printing" />
-            </div>
+          <!-- Third article -->
+          <article class="news-flex">
+            <figure class="news-img">
+              <img src="images/3D.webp" alt="3D printing interior design application" loading="lazy" />
+            </figure>
             <div class="news-body">
               <h3>3D printing redefines the interior industry</h3>
               <p>
@@ -159,37 +165,30 @@
                 can become.
               </p>
             </div>
-            <div class="news-icon">
+            <div class="news-icon" aria-hidden="true">
               <span><i class="fa-solid fa-arrow-right fa-2xl"></i></span>
             </div>
-          </div>
+          </article>
 
-          <!-- fourth flexbox -->
-          <div class="news-flex">
-            <div class="news-img">
-              <img
-                src="images/rails.webp"
-                alt="From the computer to the rails"
-              />
-            </div>
+          <!-- Fourth article -->
+          <article class="news-flex">
+            <figure class="news-img">
+              <img src="images/rails.webp" alt="Digital twin technology for railway systems" loading="lazy" />
+            </figure>
             <div class="news-body">
               <h3>From the computer to the rails</h3>
               <p>Punctual trains, thanks to digital twins.</p>
             </div>
-            <div class="news-icon">
+            <div class="news-icon" aria-hidden="true">
               <span><i class="fa-solid fa-arrow-right fa-2xl"></i></span>
             </div>
-          </div>
+          </article>
 
-          <!-- fifth flexbox -->
-          <div class="news-flex">
-            <div class="news-img">
-              <img
-                src="images/Kotanyi.webp"
-                alt="Kotányi benefits from AI-supported
-                                          maintenance"
-              />
-            </div>
+          <!-- Fifth article -->
+          <article class="news-flex">
+            <figure class="news-img">
+              <img src="images/Kotanyi.webp" alt="Kotányi AI-supported maintenance system" loading="lazy" />
+            </figure>
             <div class="news-body">
               <h3>Kotányi benefits from AI-supported maintenance</h3>
               <p>
@@ -197,41 +196,37 @@
                 transparency, efficiency and availability.
               </p>
             </div>
-            <div class="news-icon">
+            <div class="news-icon" aria-hidden="true">
               <span><i class="fa-solid fa-arrow-right fa-2xl"></i></span>
             </div>
-          </div>
+          </article>
 
-          <!-- sixth flexbox -->
-          <div class="news-flex">
-            <div class="news-img">
-              <img
-                src="images/reactive.webp"
-                alt="From reactive, to proactive
-                                          predictive maintanance"
-              />
-            </div>
+          <!-- Sixth article -->
+          <article class="news-flex">
+            <figure class="news-img">
+              <img src="images/reactive.webp" alt="BlueScope Steel predictive maintenance solution" loading="lazy" />
+            </figure>
             <div class="news-body">
-              <h3>From reactive, to proactive predictive maintanance</h3>
+              <h3>From reactive to proactive predictive maintenance</h3>
               <p>
                 BlueScope Steel avoids unplanned downtime with Senseye
                 Predictive Maintenance
               </p>
             </div>
-            <div class="news-icon">
+            <div class="news-icon" aria-hidden="true">
               <span><i class="fa-solid fa-arrow-right fa-2xl"></i></span>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
       <!-- About section -->
-      <section class="about">
+      <section class="about" aria-label="About Siemens">
         <h2>Who we are</h2>
         <div class="about-container">
-          <div class="about-img">
-            <img src="images/Siemens.webp" alt=" Siemens HQ" />
-          </div>
+          <figure class="about-img">
+            <img src="images/Siemens.webp" alt="Siemens headquarters building" loading="lazy" />
+          </figure>
           <div class="about-flex">
             <div>
               <p>
@@ -260,35 +255,35 @@
       </section>
     </main>
 
-    <!-- footer section -->
+    <!-- Footer section -->
     <footer>
-      <div>
-        <h1>SIEMENS</h1>
-        <div>
+      <div class="footer-brand">
+        <h2>SIEMENS</h2>
+        <nav class="social-links" aria-label="Social media links">
           <ul class="logo-container">
             <li>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="Siemens on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="Siemens on YouTube"><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" aria-label="Siemens on Facebook"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Siemens on X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Siemens on Instagram"><i class="fa-brands fa-instagram"></i></a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
 
-      <!-- last footer section -->
+      <!-- Footer links section -->
       <div class="last-container">
-        <p>&copy; Sieman 1996-2025</p>
-        <div>
+        <p>&copy; 2024 Siemens</p>
+        <nav class="footer-nav" aria-label="Footer links">
           <ul class="footer-flex">
             <li><a href="#">Corporate information</a></li>
             <li><a href="#">Privacy notice</a></li>
@@ -297,7 +292,7 @@
             <li><a href="#">Digital ID</a></li>
             <li><a href="#">Whistleblowing</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </footer>
   </body>
